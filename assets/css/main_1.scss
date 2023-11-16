@@ -1,0 +1,15 @@
+--- 
+# this ensures Jekyll reads the file to be transformed into CSS later  
+# only Main files contain this front matter, not partials.  
+--- 
+
+
+body{
+    color: #fff;
+    background: #333;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}

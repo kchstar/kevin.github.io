@@ -1,0 +1,53 @@
+--- 
+ # for jekyll  
+--- 
+
+@import 'colors';
+@import 'typography'; 
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+$ss-ss: 'Pathway Gothic One', sans-serif;
+$ff-s: 'Cardo', serif;
+.a{
+    color: purple;
+}
+
+body{
+    margin: 0px;
+    font-family: $ff-s;
+    display: grid;
+    grid-template-columns: 
+        1fr [container-start] 
+        repeat(6, minmax(100px, 250px ))
+        [container-end] 1fr;
+}
+.title-area{
+    background: $clr-blue;
+    grid-column: 1 / 9;
+    color: $clr-white;
+    text-align: center;
+    margin-bottom: 4em;
+   
+} 
+.title{
+    // font-family: $ff-ss;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+}
+.a,
+.sub-title{
+    text-align: center;
+}
+p{
+    grid-column: 3 / 6;
+}
+footer{
+    grid-column:  1 / 9;
+    background:$clr-pink;
+    color: $clr-white;
+    text-align: center;
+    padding: 2em 0;
+}
